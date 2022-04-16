@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feedback Form</title>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap">
+
+<style>
+
+/* Style all */
+* {
+  box-sizing: border-box;
+}
+
+/*Style the body and html*/
+body, html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* Style the header */
+.header {
+  padding: 300px;
+  text-align: center;
+  background-image: url('Desktop_Banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  text-align: center;
+  
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+/*Modifies sidebar left-column*/
+.side {
+  flex: 15%;
+  background-color: #e6ae40;
+  padding: 20px;
+}
+
+/*Modifies sidebar left-column link*/
+.side a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+/*Modifies sidebar left-column link hover*/
+.side a:hover {
+  color: black;
+  background-color: white;
+}
+
+/*Modifies sidebar left-column unordered list*/
+.side ul{
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+/*Modifies sidebar left-column heading*/
+.side h3{
+  color: white;
+ font-size: 20px;
+ text-align: center;
+ font-weight: bold;
+}
+/* Style all */
+* {
+  box-sizing: border-box;
+}
+/*Style the body and html*/
+body, html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* Style the header */
+.header {
+  padding: 300px;
+  text-align: center;
+  background-image: url('Desktop_Banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  text-align: center;
+  
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: flex;
+  flex: 1%;
+  justify-content: space-between;
+  justify-content: center;
+  border-radius: 10px;
+
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+  
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: grey;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+    
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
+</style>    
+</head>    
+<body>
+
+<!-- Main Header -->
+<div class="header"></div>
+
+<!-- Applied bootstrap for navbar style 1 -->
+<!-- Navbar -->
+<div class="navbar navbar-expand-sm bg-dark">
+  <a href="index.html">Home</a>
+  <a href="events.html">Events</a>
+  <a href="#">Gallery</a>
+  <a href="places.html">Interesting Places</a>
+  <a href="#">Comittee</a>
+  <a href="FeedbackForm.html">Feedback Form</a>
+  <a href="about.html">About Us</a>
+</div>
+
+   
+<div class="container"> 
+<h2>FEEDBACK FORM</h2>    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Email Address</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your Email Address...">    
+        </div>    
+      </div>
+
+ <div class="row">    
+      <div class="col-25">    
+        <label for="number">Phone Number</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="phonenumber" name="phonenumber" placeholder="Your Phone Number...">    
+      </div>    
+    </div>    
+
+    <div class="row">    
+      <div class="col-25">    
+        <label for="country">Country</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="country" name="country">    
+            <option value="none">Select Country</option>    
+          <option value="brunei">Brunei</option>    
+          <option value="malaysia">Malaysia</option>    
+          <option value="indonesia">Indonesia</option>    
+          <option value="thailand">Thailand</option>    
+          <option value="phillipines">Phillipines</option>    
+          <option value="laos">Laos</option>    
+          <option value="singapore">Singapore</option>    
+        </select>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feedback</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div>    
+    
+</body>    
+</html> 
