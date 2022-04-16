@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gallery</title>
+	<style type="text/css">
+
+    /* Style all */
+* {
+  box-sizing: border-box;
+}
+/*Style the body and html*/
+body, html {
+  margin: 0;
+  color: white;
+  background-color: black;
+}
+h2{
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+  width: 500px;
+  height: 50px
+}
+
+
+/* Style the header */
+.header {
+  padding: 300px;
+  text-align: center;
+  background-image: url('Desktop_Banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  text-align: center;
+  
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: flex;
+  flex: 1%;
+  justify-content: space-between;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* align header 2 to the center*/
+.bless{
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+.bel, .bless {
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  border: solid 1px #c3c3c3;
+}
+
+.bel {
+  padding: 50px;
+  display: none;
+  background-color: black;
+}
+
+img{width: 800px;height: 500px;margin: auto;} 
+#lefto{ margin-right: 1000px; font-size: 2em }
+#righto{ font-size: 2em }
+
+.video{
+  display: flex;
+  flex: 1%;
+  justify-content: space-between;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+}
+
+.gallerybod{
+  margin-top: 100px;
+  background-color: black;
+}
+	</style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://ma
+  xcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $(".bless").click(function(){
+    $(".bel").slideToggle("slow");
+  });
+});
+
+</script>
+
+
+</head>
+<body>
+
+<div class="header"></div>
+
+<!-- Applied bootstrap for navbar style 1 -->
+<!-- Navbar -->
+<div class="navbar navbar-expand-sm bg-dark">
+  <a href="index.html">Home</a>
+  <a href="events.html">Events</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="places.html">Interesting Places</a>
+  <a href="committe.html">Comittee</a>
+  <a href="FeedbackForm.html">Feedback Form</a>
+  <a href="about.html">About Us</a>
+</div>
+
+<div class="gallerbod">
+ <!-- header for pictures section (Manual Slideshow) -->
+<h2 class="bless">Pictire Gallery</h2>
+<div class="bel">
+  <img class="imagez" src="gallery/arts.jpg" >
+  <img class="imagez" src="gallery/sport.jpg" >
+  <img class="imagez" src="gallery/sport1.jpeg" >
+  <img class="imagez" src="gallery/cultural.jpg" >
+  <img class="imagez" src="gallery/cultural2.jpg" >
+  <img class="imagez" src="gallery/recreation.jpg" >
+
+  <button id="lefto" onclick="ready(-1)">&#10094;</button>
+  <button id="righto" onclick="ready(1)">&#10095;</button>
+</div>
+</div>
+
+<!-- jQuery for slider toggle -->
+<script>
+var slider = 1;
+showDivs(slider);
+
+function ready(n) {
+  showDivs(slider += n);
+}
+
+function showDivs(n) {
+  var ai;
+  var x = document.getElementsByClassName("imagez");
+  if (n > x.length) {slider = 1}
+  if (n < 1) {slider = x.length}
+  for (ai = 0; ai < x.length; ai++) {
+    x[ai].style.display = "none";  
+  }
+  x[slider-1].style.display = "block";  
+}
+</script>
+
+
+
+
+
+ <!-- header for video section -->
+ <h2 class="bless">Videos</h2>
+<div class="video"> 
+<iframe class="bel" width="860" height="515" src="https://www.youtube.com/embed/wSqK7CYFU58?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+</body>
+</html>
